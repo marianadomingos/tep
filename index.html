@@ -1,0 +1,586 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Termo de Encerramento de Projeto - TEP</title>
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <link href="assets\css\tep.css" rel="stylesheet">
+</head>
+
+<body className='snippet-body'>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-11 col-md-9">
+                <div class="">
+                    <form id="msform">
+                        <!-- progressbar -->
+                        <ul id="progressbar">
+                            <li class="active" id="dadosGerais"><strong>Dados Gerais</strong></li>
+                            <li id="aplicacoes"><strong>Aplicações</strong></li>
+                            <li id="condicoesEntrega"><strong>Condições Entregues</strong></li>
+                            <li id="dadosAdicionais"><strong>Dados Adicionais</strong></li>
+                            <li id="termosAceite"><strong>Aceite de Aceite</strong></li>
+                            <li id="confirmacao"><strong>Concluído</strong></li>
+                        </ul>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <br>
+                        <!-- fieldsets -->
+                        <fieldset>
+                            <div class="form-card">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <h2 class="fs-title">Informações Gerais</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="projeto">Tipo de Projeto</label><br>
+                                            <select name="projeto" class="form-control form-checklist" required>
+                                                <option value="">Selecione</option>
+                                                <option value="s">Instalação</option>
+                                                <option value="n">Reinstalação</option>
+                                                <option value="n">Migração de Banco de Dados</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="contrato">Modalidade de Contrato</label><br>
+                                            <select name="modalidade" class="form-control form-checklist" required>
+                                                <option value="">Selecione</option>
+                                                <option value="Basico">Básico</option>
+                                                <option value="Monitoramento">Monitoramento</option>
+                                                <option value="Coorporativo">Coorporativo</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="dtDocumento">Data do Documento</label><br>
+                                            <input id="" name="dtDocumento" type="date"
+                                                class="form-control form-checklist" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            <label for="cliente">Cliente Final</label><br>
+                                            <input id="" name="cliente" type="text" class="form-control form-checklist"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="cnpjCliente">CNPJ</label><br>
+                                            <input id="" name="cnpjCliente" type="text"
+                                                class="form-control form-checklist" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            <label for="mantenedor">Mantenedor</label><br>
+                                            <input id="" name="mantenedor" type="text"
+                                                class="form-control form-checklist" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="cnpjMantenedor">CNPJ</label><br>
+                                            <input id="" name="cnpjMantenedor" type="text"
+                                                class="form-control form-checklist" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-7">
+                                        <h2 class="fs-title">Contatos</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="contato_1">Nome Completo</label><br>
+                                            <input id="" name="contato_1" type="text"
+                                                class="form-control form-checklist" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="email_1">E-mail</label><br>
+                                            <input id="" name="email_1" type="text" class="form-control form-checklist"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="">?????</label><br>
+                                            <select name="" class="form-control form-checklist" required>
+                                                <option value="">Selecione</option>
+                                                <option value="Cliente">Cliente Final</option>
+                                                <option value="Mantenedor">Mantenedor</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="contato_2">Nome Completo</label><br>
+                                            <input id="" name="contato_2" type="text"
+                                                class="form-control form-checklist" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="email_2">E-mail</label><br>
+                                            <input id="" name="email_2" type="text" class="form-control form-checklist"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="">?????</label><br>
+                                            <select name="" class="form-control form-checklist" required>
+                                                <option value="">Selecione</option>
+                                                <option value="Cliente">Cliente Final</option>
+                                                <option value="Mantenedor">Mantenedor</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="button" name="next" class="next action-button" value="Próximo" />
+                        </fieldset>
+                        <fieldset>
+                            <div class="form-card">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <h2 class="fs-title">Aplicações</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="dtInstalacao">Data da Instalação</label><br>
+                                            <input id="" name="dtInstalacao" type="date"
+                                                class="form-control form-checklist" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <div class="form-group">
+                                                <label for="versaoDesktop">Versão Desktop</label><br>
+                                                <input id="" name="versaoDesktop" type="text"
+                                                    class="form-control form-checklist" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <div class="form-group">
+                                                <label for="versaoWeb">Versão Web</label><br>
+                                                <input id="" name="versaoWeb" type="text"
+                                                    class="form-control form-checklist" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="softwareTarifacao">Software de Tarifação</label><br>
+                                            <select name="softwareTarifacao" class="form-control form-checklist"
+                                                required>
+                                                <option value="">Selecione</option>
+                                                <option value="Monitor">SOMA Monitor</option>
+                                                <option value="Processador">SOMA Processador</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="versaoTarifacao">Versão</label><br>
+                                            <input id="" name="versaoTarifacao" type="text"
+                                                class="form-control form-checklist" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="estrutura">Estrutura</label><br>
+                                            <select name="estrutura" class="form-control form-checklist" required>
+                                                <option value="">Selecione</option>
+                                                <option value="32">x32</option>
+                                                <option value="64">x64</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="coletaFTP">Coleta FTP</label><br>
+                                            <select name="coletaFTP" class="form-control form-checklist" required>
+                                                <option value="">Selecione</option>
+                                                <option value="NA">N/A</option>
+                                                <option value="Manager">SOMA Manager</option>
+                                                <option value="Processador">SOMA Processador</option>
+                                                <option value="ServiceCloud">Service Cloud</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="versaoFTP">Versão</label><br>
+                                            <input id="" name="versaoFTP" type="text"
+                                                class="form-control form-checklist" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="relAutomatico">Relatório Automático</label><br>
+                                            <select name="relAutomatico" class="form-control form-checklist" required>
+                                                <option value="">Selecione</option>
+                                                <option value="Sim">Sim</option>
+                                                <option value="Nao">Não</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="appTerceiros">Aplicações de Terceiros</label><br>
+                                            <select name="appTerceiros" class="form-control form-checklist" required>
+                                                <option value="">Selecione</option>
+                                                <option value="ODBC">MYSQL ODBC</option>
+                                                <option value="Driver">OHL Driver</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="versaoAppTerceiros">Versão</label><br>
+                                            <input id="" name="versaoAppTerceiros" type="text"
+                                                class="form-control form-checklist" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="rotinas">Rotinas Específicas</label><br>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id=""
+                                                    value="agendadorTarefas">
+                                                <label class="form-check-label" for="agendadorTarefas">Agendador de
+                                                    Tarefas</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="" value="scriptsBD">
+                                                <label class="form-check-label" for="scriptsBD">Scripts de Banco de
+                                                    Dados</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id=""
+                                                    value="scriptsBAT">
+                                                <label class="form-check-label" for="scriptsBAT">.BAT</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="dadosAdicionais">Dados Adicionais</label>
+                                            <textarea class="form-control" id="" rows="3"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="button" name="next" class="next action-button" value="Próximo" />
+                            <input type="button" name="previous" class="previous action-button-previous"
+                                value="Anterior" />
+                        </fieldset>
+                        <fieldset>
+                            <div class="form-card">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <h2 class="fs-title">Condições Entregue</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="tipoComunicacao">Tipo de Comunicação</label><br>
+                                            <select name="tipoComunicacao" class="form-control form-checklist" required>
+                                                <option value="">Selecione</option>
+                                                <option value="FTP">FTP</option>
+                                                <option value="Serial">PORTA SERIAL</option>
+                                                <option value="TCP_IP">TCP/IP</option>
+                                                <option value="TCP_Server">TCP/Server</option>
+                                                <option value="XML">XML</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="database">Banco de Dados</label><br>
+                                            <select name="database" class="form-control form-checklist" required>
+                                                <option value="">Selecione</option>
+                                                <option value="PostgreSQL">PostgreSQL 14</option>
+                                                <option value="Firebird">Firebird 2.5</option>
+                                                <option value="Oracle">Oracle</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="qtdRamal">Quantidade de Ramais</label><br>
+                                            <input id="" name="qtdRamal" type="text" class="form-control form-checklist"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="fluxoLigacao">Fluxo de Ligação Mensal</label><br>
+                                            <input id="" name="fluxoLigacao" type="text"
+                                                class="form-control form-checklist" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="dadosComunicacao">Dados de Comunicação com a Central</label>
+                                            <textarea class="form-control" id="" rows="3"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="dadosCadastrais">Dados Importados/Cadastros</label>
+                                            <textarea class="form-control" id="" rows="3"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-8">
+                                        <label for="especificacoesServidor">Especificações do Servidor</label><br>
+                                        <input type="file" id="" name="especificacoesServidor" multiple><br><br>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-7">
+                                        <h2 class="fs-title">Rotina de Backup</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="localArmazenamento">Local de Armazenamento</label><br>
+                                            <input id="" name="localArmazenamento" type="text"
+                                                class="form-control form-checklist" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="horarioAgendamento">Horário de Agendamento</label><br>
+                                            <input id="" name="horarioAgendamento" type="time"
+                                                class="form-control form-checklist" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="aplicacaoBackup">Aplicação Responsável</label><br>
+                                            <select name="aplicacaoBackup" class="form-control form-checklist" required>
+                                                <option value="">Selecione</option>
+                                                <option value="Agendador">Agendador de Tarefas</option>
+                                                <option value="Cobian">Cobian Backup</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="button" name="next" class="next action-button" value="Próximo" />
+                            <input type="button" name="previous" class="previous action-button-previous"
+                                value="Anterior" />
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-card">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <h2 class="fs-title">Dados Adicionais</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label for="layoutSaida">Layout de Saída</label><br>
+                                        <input type="file" id="" name="layoutSaida" multiple><br><br>
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="layoutEntrada">Layout de Entrada</label><br>
+                                        <input type="file" id="" name="layoutEntrada" multiple><br><br>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="descricaoEstrutura">Descrição da Estrutura Implantada</label>
+                                            <textarea class="form-control" id="descricaoEstrutura" rows="3"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="responsabilidadeCliente">Obrigações e Responsabilidades do
+                                                Cliente</label>
+                                            <textarea class="form-control" id="responsabilidadeCliente"
+                                                rows="3"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-7">
+                                        <h2 class="fs-title">Treinamento</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="dtTreinamento">Data</label><br>
+                                            <input id="" name="dtTreinamento" type="date"
+                                                class="form-control form-checklist" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            <label for="aplicacoesTreinamento">Aplicações</label><br>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id=""
+                                                    value="somaDesktop">
+                                                <label class="form-check-label" for="somaDesktop">SOMA Tarifador
+                                                    Desktop</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="" value="somaWeb">
+                                                <label class="form-check-label" for="somaWeb">SOMA Tarifador Web</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id=""
+                                                    value="somaManager">
+                                                <label class="form-check-label" for="somaManager">SOMA Manager</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="obsTreinamento">Observações</label>
+                                            <textarea class="form-control" id="obsTreinamento" rows="3"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="button" name="next" class="next action-button" value="Próximo" />
+                            <input type="button" name="previous" class="previous action-button-previous"
+                                value="Anterior" />
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-card">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <h2 class="fs-title">Responsabilidade sobre o Backup</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p>1 - É de inteira responsabilidade do CLIENTE e/ou MANTENEDOR realizar,
+                                            ajustar, acompanhar e manter o backup do SOMA Tarifador em dia, bem como
+                                            realizar o backup antes de efetuar qualquer tipo de manutenção no sistema ou
+                                            no dispositivo onde o mesmo está instalado;
+                                            <br><br>2 - A SOMA Soluções não realiza e não armazena, em hipótese alguma,
+                                            qualquer tipo de backup em sua estrutura, salvo se houver contrato
+                                            específico para esta finalidade formalizado entre as partes. Se houver
+                                            necessidade de armazenar o backup dos dados por algum período na estrutura
+                                            da SOMA Soluções, o cliente será notificado e deverá autorizar formalmente,
+                                            de acordo com os termosAceite da LGPD.
+                                            <br><br>3 – A SOMA Soluções não tem responsabilidade pelo uso de softwares
+                                            de terceiros, mesmo que estes tenham algum relacionamento com o SOMA
+                                            Tarifador, tais como: softwares para gestão de backup, conexões remotas
+                                            dentre outros.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-7">
+                                        <h2 class="fs-title">Termo de Aceite</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p>Considerando as informações acima, as partes concordam que o projeto foi
+                                            concluído com sucesso. Qualquer nova ocorrência, dúvida ou necessidade de
+                                            alteração dúvida ou
+                                            necessidade de alteração deverá ser comunicada à equipe de atendimento da
+                                            SOMA Soluções, por qualquer dos canais abaixo:<br><br>
+
+                                            E-mail: suportetarifador@somasolucoes.com<br>
+                                            Telefone: (19) 3547-2050<br>
+                                            WhatsApp: (19) 99601-7383<br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <input type="button" name="next" class="next action-button" value="Cadastrar" />
+                            <input type="button" name="previous" class="previous action-button-previous"
+                                value="Anterior" />
+                        </fieldset>
+
+
+                        <fieldset>
+                            <div class="form-card">
+                                <h2 class="text-center"><strong>TEP cadastrado com sucesso!</strong></h2>
+                                <br>
+                                <div class="row justify-content-center">
+                                    <div class="col-3">
+                                        <img src="assets\img\tep-envio.png" class="fit-image">
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row justify-content-center">
+                                    <div class="col-7 text-center">
+                                        <h5 class="text-center">Deseja enviar a documentação por e-mail?</h5>
+                                        <input type="button" name="next" class="btn-enviar" value="Enviar agora" />
+                                        <input type="button" name="next" class="btn-sair" value="Sair" />
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type='text/javascript'
+        src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
+    <script type='text/javascript' src='assets\js\tep.js'></script>
+
+</body>
+
+</html>
