@@ -28,7 +28,7 @@ html {
     height: 100%;
 }
 
-p {
+p, .info-card {
     color: grey;
 }
 
@@ -42,13 +42,25 @@ input[type=button] {
     font-weight: normal;
 }
 
+.add-btn{
+    width: 150px;
+    background-color: #58E086;
+    color: white;
+    border: 0 none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 5px;
+    margin: 0 10px 10px 15px;
+    box-shadow: 0px 3px 5px rgba(50, 50, 50, 0.2);
+    }
+
 #msform {
     text-align: center;
     position: relative;
     margin-top: 20px;
 }
 
-#msform fieldset {
+#msform fieldset, .info-card {
     background: white;
     border: 0 none;
     border-radius: 0.5rem;
@@ -57,7 +69,6 @@ input[type=button] {
     margin: 0;
     padding-bottom: 20px;
     box-shadow: 0 10px 34px -15px rgb(0 0 0 / 24%);
-
     /*stacking fieldsets above each other*/
     position: relative;
 }
@@ -96,6 +107,7 @@ letter-spacing: 1px;
     outline-width: 0;
 }
 
+
 /*Next Buttons*/
 #msform .action-button {
     width: 100px;
@@ -111,7 +123,8 @@ letter-spacing: 1px;
 }
 
 #msform .action-button:hover,
-#msform .action-button:focus {
+#msform .action-button:focus,
+.add-btn:hover, .add-btn:focus {
     background-color: #4FD377;
 }
 
@@ -162,6 +175,20 @@ z-index: 0;
 border: none;
 position: relative;
 } */
+
+.info-list{
+    list-style-type:circle;
+    margin-left:25px;
+}
+
+.info-title {
+    color:#f78659;
+    font-size: 25px;
+    /* color: #000; */
+    margin-bottom: 15px;
+    font-weight: normal;
+    text-align: left;
+}
 
 /*FieldSet headings*/
 .fs-title {
