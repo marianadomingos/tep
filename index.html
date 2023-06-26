@@ -6,9 +6,10 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Termo de Encerramento de Projeto - TEP</title>
     <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
-    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css' rel='stylesheet'>
     <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <link href="assets\css\tep.css" rel="stylesheet">
+
 </head>
 
 <body className='snippet-body'>
@@ -23,7 +24,7 @@
                             <li id="aplicacoes"><strong>Aplicações</strong></li>
                             <li id="condicoesEntrega"><strong>Condições Entregues</strong></li>
                             <li id="dadosAdicionais"><strong>Dados Adicionais</strong></li>
-                            <li id="termosAceite"><strong>Aceite de Aceite</strong></li>
+                            <li id="termosAceite"><strong>Termos de Aceite</strong></li>
                             <li id="confirmacao"><strong>Concluído</strong></li>
                         </ul>
                         <div class="progress">
@@ -31,6 +32,12 @@
                                 aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                         <br>
+                        <div class="row" style="margin-bottom:10px;">
+                            <div class="col-12">
+                                <i class="fa-solid fa-lightbulb"></i> Dúvidas ao preencher o TEP? Consulte <a
+                                    href="ajuda.html" target=" _blank">aqui</a>
+                            </div>
+                        </div>
                         <!-- fieldsets -->
                         <fieldset>
                             <div class="form-card">
@@ -42,12 +49,20 @@
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="form-group">
+                                            <label for="protocolo">Protocolo</label><br>
+                                            <input id="" name="nrProtocolo" type="text"
+                                                class="form-control form-checklist" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
                                             <label for="projeto">Tipo de Projeto</label><br>
                                             <select name="projeto" class="form-control form-checklist" required>
                                                 <option value="">Selecione</option>
-                                                <option value="s">Instalação</option>
-                                                <option value="n">Reinstalação</option>
-                                                <option value="n">Migração de Banco de Dados</option>
+                                                <option value="Implantacao">Implantação</option>
+                                                <option value="Reinstalacao">Reinstalação</option>
+                                                <option value="Migracao">Migração de Banco de Dados/Servidor</option>
+                                                <option value="Suporte">Suporte Básico</option>
                                             </select>
                                         </div>
                                     </div>
@@ -59,14 +74,8 @@
                                                 <option value="Basico">Básico</option>
                                                 <option value="Monitoramento">Monitoramento</option>
                                                 <option value="Coorporativo">Coorporativo</option>
+                                                <option value="SemContrato">Sem Contrato</option>
                                             </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label for="dtDocumento">Data do Documento</label><br>
-                                            <input id="" name="dtDocumento" type="date"
-                                                class="form-control form-checklist" required>
                                         </div>
                                     </div>
                                 </div>
@@ -91,7 +100,7 @@
                                         <div class="form-group">
                                             <label for="mantenedor">Mantenedor</label><br>
                                             <input id="" name="mantenedor" type="text"
-                                                class="form-control form-checklist" required>
+                                                class="form-control form-checklist">
                                         </div>
                                     </div>
 
@@ -99,11 +108,14 @@
                                         <div class="form-group">
                                             <label for="cnpjMantenedor">CNPJ</label><br>
                                             <input id="" name="cnpjMantenedor" type="text"
-                                                class="form-control form-checklist" required>
+                                                class="form-control form-checklist">
                                         </div>
                                     </div>
+                                    <button class="add-btn">
+                                        <i class="fa fa-plus"></i> Nova Empresa
+                                    </button>
                                 </div>
-                                <div class="row">
+                                <div class="row" style="margin-top:20px">
                                     <div class="col-7">
                                         <h2 class="fs-title">Contatos</h2>
                                     </div>
@@ -125,11 +137,12 @@
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <label for="">?????</label><br>
+                                            <label for="">Empresa</label><br>
                                             <select name="" class="form-control form-checklist" required>
                                                 <option value="">Selecione</option>
                                                 <option value="Cliente">Cliente Final</option>
                                                 <option value="Mantenedor">Mantenedor</option>
+                                                <option value="Mantenedor">Outros</option>
                                             </select>
                                         </div>
                                     </div>
@@ -151,14 +164,18 @@
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <label for="">?????</label><br>
+                                            <label for="">Empresa</label><br>
                                             <select name="" class="form-control form-checklist" required>
                                                 <option value="">Selecione</option>
                                                 <option value="Cliente">Cliente Final</option>
                                                 <option value="Mantenedor">Mantenedor</option>
+                                                <option value="Mantenedor">Outros</option>
                                             </select>
                                         </div>
                                     </div>
+                                    <button class="add-btn">
+                                        <i class="fa fa-plus"></i> Novo Contato
+                                    </button>
                                 </div>
                             </div>
                             <input type="button" name="next" class="next action-button" value="Próximo" />
@@ -173,7 +190,7 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="dtInstalacao">Data da Instalação</label><br>
+                                            <label for="dtInstalacao">Data de Inicio do Projeto</label><br>
                                             <input id="" name="dtInstalacao" type="date"
                                                 class="form-control form-checklist" required>
                                         </div>
@@ -415,7 +432,7 @@
                                 value="Anterior" />
                         </fieldset>
 
-                        <fieldset>
+                        <fieldset id="dadosAdicionais">
                             <div class="form-card">
                                 <div class="row">
                                     <div class="col-7">
@@ -516,7 +533,7 @@
                                             específico para esta finalidade formalizado entre as partes. Se houver
                                             necessidade de armazenar o backup dos dados por algum período na estrutura
                                             da SOMA Soluções, o cliente será notificado e deverá autorizar formalmente,
-                                            de acordo com os termosAceite da LGPD.
+                                            de acordo com os termos de aceite da LGPD.
                                             <br><br>3 – A SOMA Soluções não tem responsabilidade pelo uso de softwares
                                             de terceiros, mesmo que estes tenham algum relacionamento com o SOMA
                                             Tarifador, tais como: softwares para gestão de backup, conexões remotas
