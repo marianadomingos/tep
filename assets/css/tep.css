@@ -106,7 +106,7 @@ html {
 /*FieldSet headings*/
 .fs-title {
     font-size: 25px;
-    /* color: #000; */
+    color: #000000bf;
     margin-bottom: 15px;
     font-weight: normal;
     text-align: left;
@@ -259,18 +259,10 @@ input[type=button] {
     /* color: #000; */
     margin-bottom: 15px;
     font-weight: normal;
-    text-align: left;
 }
 
-.main-title {
-    color: #f78659;
-    font-size: 25px;
-    /* color: #000; */
-    margin-bottom: 15px;
-    font-weight: lighter;
-}
 
-a.main-title:hover {
+a.info-title:hover {
     text-decoration: none;
     color: #f34906;
 }
@@ -290,6 +282,7 @@ a.main-title:hover {
 .btn-sair {
     background: #a19f9f;
 }
+
 
 .add-btn {
     width: 150px;
