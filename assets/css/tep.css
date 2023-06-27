@@ -1,4 +1,6 @@
-body{background-color:#F2F2F2;}
+body {
+    background-color: #F2F2F2;
+}
 
 ::-webkit-scrollbar {
     width: 8px;
@@ -26,33 +28,8 @@ body{background-color:#F2F2F2;}
 
 html {
     height: 100%;
+    scroll-behavior: smooth;
 }
-
-p, .info-card {
-    color: grey;
-}
-
-input[type=button] {
-    box-shadow: 0px 3px 5px rgba(50, 50, 50, 0.2);
-}
-
-#heading {
-    text-transform: uppercase;
-    color: #673AB7;
-    font-weight: normal;
-}
-
-.add-btn{
-    width: 150px;
-    background-color: #58E086;
-    color: white;
-    border: 0 none;
-    border-radius: 5px;
-    cursor: pointer;
-    padding: 5px 5px;
-    margin: 0 10px 10px 15px;
-    box-shadow: 0px 3px 5px rgba(50, 50, 50, 0.2);
-    }
 
 #msform {
     text-align: center;
@@ -60,7 +37,8 @@ input[type=button] {
     margin-top: 20px;
 }
 
-#msform fieldset, .info-card {
+#msform fieldset,
+.info-card {
     background: white;
     border: 0 none;
     border-radius: 0.5rem;
@@ -83,31 +61,6 @@ input[type=button] {
     display: none;
 }
 
-/* #msform input, #msform textarea {
-padding: 8px 15px 8px 15px;
-border: 1px solid #ccc;
-border-radius: 0px;
-margin-bottom: 25px;
-margin-top: 2px;
-width: 100%;
-box-sizing: border-box;
-font-family: montserrat;
-color: #2C3E50;
-background-color: #ECEFF1;
-font-size: 16px;
-letter-spacing: 1px;
-} */
-
-#msform input:focus,
-#msform textarea:focus {
-    -moz-box-shadow: none !important;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-    border: 1px solid #673AB7;
-    outline-width: 0;
-}
-
-
 /*Next Buttons*/
 #msform .action-button {
     width: 100px;
@@ -124,7 +77,9 @@ letter-spacing: 1px;
 
 #msform .action-button:hover,
 #msform .action-button:focus,
-.add-btn:hover, .add-btn:focus {
+.add-btn:hover,
+.add-btn:focus,
+.btn-enviar:hover {
     background-color: #4FD377;
 }
 
@@ -142,52 +97,10 @@ letter-spacing: 1px;
     float: right;
 }
 
-.btn-enviar {
-    width: 120px;
-    background: #58E086;
-    font-weight: bold;
-    color: white;
-    border: 0 none;
-    border-radius: 5px;
-    cursor: pointer;
-    padding: 10px;
-}
-
-.btn-sair {
-    width: 120px;
-    background: #a19f9f;
-    font-weight: bold;
-    color: white;
-    border: 0 none;
-    border-radius: 5px;
-    cursor: pointer;
-    padding: 10px;
-}
-
 #msform .action-button-previous:hover,
-#msform .action-button-previous:focus {
+#msform .action-button-previous:focus,
+.btn-sair:hover {
     background-color: #000000;
-}
-
-/*The background card*/
-/* .card {
-z-index: 0;
-border: none;
-position: relative;
-} */
-
-.info-list{
-    list-style-type:circle;
-    margin-left:25px;
-}
-
-.info-title {
-    color:#f78659;
-    font-size: 25px;
-    /* color: #000; */
-    margin-bottom: 15px;
-    font-weight: normal;
-    text-align: left;
 }
 
 /*FieldSet headings*/
@@ -197,11 +110,6 @@ position: relative;
     margin-bottom: 15px;
     font-weight: normal;
     text-align: left;
-}
-
-.purple-text {
-    color: #673AB7;
-    font-weight: normal;
 }
 
 /*Step Count*/
@@ -320,4 +228,81 @@ position: relative;
 .fit-image {
     width: 100%;
     object-fit: cover;
+}
+
+/* CSS Adicional */
+p,
+.info-card {
+    color: grey;
+}
+
+b {
+    font-weight: 500
+}
+
+input[type=button] {
+    box-shadow: 0px 3px 5px rgba(50, 50, 50, 0.2);
+}
+
+.btn-scroll {
+    transition: margin-top 250ms;
+}
+
+.info-list {
+    list-style-type: circle;
+    margin-left: 25px;
+}
+
+.info-title {
+    color: #f78659;
+    font-size: 25px;
+    /* color: #000; */
+    margin-bottom: 15px;
+    font-weight: normal;
+    text-align: left;
+}
+
+.main-title {
+    color: #f78659;
+    font-size: 25px;
+    /* color: #000; */
+    margin-bottom: 15px;
+    font-weight: lighter;
+}
+
+a.main-title:hover {
+    text-decoration: none;
+    color: #f34906;
+}
+
+.btn-enviar,
+.btn-sair {
+    width: 120px;
+    background: #58E086;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.btn-sair {
+    background: #a19f9f;
+}
+
+.add-btn {
+    width: 150px;
+    background-color: #58E086;
+    color: white;
+    border: 0 none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 5px;
+    margin: 0 10px 10px 15px;
+    box-shadow: 0px 3px 5px rgba(50, 50, 50, 0.2);
+}
+
+a.info {
+    color: #f78659
 }
