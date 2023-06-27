@@ -18,16 +18,16 @@
             <div class="col-11 col-md-9">
                 <div class="form-card info-card">
                     <center>
-                        <h2 class="main-title">Como preencher o Termo de Encerramento de Projeto?</h2>
+                        <h3 class="info-title">Como preencher o Termo de Encerramento de Projeto?</h3>
                         <small>Abaixo estão descritos todos os campos solicitados para preenchimento da
                             documentação.<br>Lembre-se que ao finalizar o preenchimento, a documentação será enviada
                             ao cliente e a todos os envolvidos, portanto, informe todos os dados corretamente e descreva
                             cuidadosamente os procedimentos do projeto.<br><br></small>
                     </center>
                     <h2 class="info-title"><i class="fa-solid fa-circle-arrow-right"></i> Dados Gerais </h2>
-                    <b>Protocolo:</b> Informe o número de protocolo de atendimento do SOMA Gestão.<br><br>
+                    <b>Protocolo:</b> Número de protocolo de atendimento do SOMA Gestão.<br><br>
                     <b>Tipo de Projeto</b><br>
-                    Entre as opções disponíveis, selecione o tipo de serviço executado no cliente:
+                    Entre as opções disponíveis, selecionar o tipo de serviço executado no cliente:
                     <ul class="info-list">
                         <li>Implantação: Primeira instalação/ativação do SOMA Tarifador</li>
                         <li>Reinstalação: Quando o cliente já possui o SOMA Tarifador em uso e precisa reinstalá-lo, sem
@@ -40,20 +40,25 @@
                             etc.</li>
                     </ul>
                     <b>Modalidade de Contrato</b><br>
-                    Entre as opções disponíveis, selecione o tipo contrato que cliente possui com a SOMA Soluções:
+                    Entre as opções disponíveis, selecionar o tipo contrato que cliente possui com a SOMA Soluções:
                     <ul class="info-list">
                         <li>Básico</li>
                         <li>Monitoramento</li>
                         <li>Coorporativo</li>
                         <li>Sem Contrato</li>
                     </ul>
-                    <b>Cliente Final:</b> Informe a Razão Social e o CNPJ do cliente que utilizará o SOMA Tarifador.
+                    <b>Cliente Final:</b> Razão Social e o CNPJ do cliente que utilizará o SOMA Tarifador.
                     <br>
-                    <b>Mantenedor:</b> Informe a Razão Social e o CNPJ do Revendedor que está intermediando o projeto.
+                    <b>Mantenedor:</b> Razão Social e o CNPJ do Revendedor responsável.
                     <br>
-                    <b>Contatos: </b> Informe o nome completo e o e-mail do contato que está participando do projeto,
-                    seja ele o cliente
-                    final, revendedor ou outras empresas de terceiros.
+                    <b>Contatos: </b> Nome completo, e-mail e empresa dos profissionais envolvidos no projeto.<br><br>
+
+                    <small>OBSERVAÇÃO: É possível que em alguns casos tenha o envolvimento de outras empresas além do
+                        cliente e revendedor.
+                        Neste cenário, deverá ser adicionado uma Nova Empresa e informado o nome do colaborador que
+                        auxiliou no projeto. Se houve
+                        o envolvimento de mais de dois participantes, também é possível adicioná-los através da ação
+                        Novo Contato.</small>
                     <hr>
                     <h2 class="info-title"><i class="fa-solid fa-circle-arrow-right"></i> Aplicações</h2>
                     <p>Nesta segunda etapa do Termo de Encerramento de Projeto (TEP) é necessário informar os dados
@@ -75,56 +80,59 @@
                             Normalmente esses scripts tem a sua
                             execução agendada pelo próprio Agendador de Tarefas do Windows</li>
                     </ul>
-                    <b>Dados Adicionais:</b> Caso houve particularidades no projeto, é importante descreve-las no TEP,
+                    <b>Dados Adicionais:</b> Caso houve particularidades no projeto, é importante descrevê-las no TEP,
                     como por exemplo, os dia(s)/horário(s) de
-                    execução de tarefas, nomes de Procedure/Function/Trigger, etc.
+                    execução de tarefas, nomes de Procedure/Function/Trigger e etc.
                     </p>
                     <hr>
                     <h2 class="info-title"><i class="fa-solid fa-circle-arrow-right"></i> Condições Entregues</h2>
                     <p>
                         <b>Tipo de Comunicação e Dados de Comunicação com a Central</b><br>
-                        Deverá ser informado e descrito as informações de Comunicação com a Central PABX.
+                        Informar e descrever as informações de Comunicação com a Central PABX.
                         É importante que seja descrito TODOS os dados utilizados para a Comunicação.
                     <ul class="info-list">
                         <li>FTP: IP, Porta, Usuário e Senha. Importante também informar se a comunicação é Ativa ou
                             Passiva</li>
-                        <li>Porta SERIAL: Baude Rate, Bits de Dados, Bits de Parada e Paridade</li>
-                        <li>XML: IP e Senha do OHL Driver</li>
-                        <li>TCP/IP ou TCP/Server: IP e Porta. Em alguns casos, também será utilizado Usuário e Senha
+                        <li>Porta SERIAL: Porta de Comunicação, Baude Rate, Bits de Dados, Bits de Parada e Paridade
+                        </li>
+                        <li>XML: IP e Senha utilizados no OHL Driver</li>
+                        <li>TCP/IP ou TCP/Server: IP e Porta. Em alguns casos, também será utilizado Usuário e Senha e
+                            os mesmos
+                            devem ser informados na documentação
                         </li>
                     </ul>
 
-                    <b>Banco de Dados:</b> Selecione o Banco de Dados utilizado no cliente<br>
-                    <b>Quantidade de Ramais:</b> Informe a quantidade de ramais que o cliente possui em uso no ato do
-                    projeto.<br>
+                    <b>Banco de Dados:</b> Banco de Dados instalado para o uso do SOMA Tarifador<br>
+                    <b>Quantidade de Ramais:</b> Quantidade de ramais que o cliente possui em uso no ato do
+                    projeto<br>
                     <b>Fluxo de Ligação Mensal:</b> Em projetos em que seja reutilizado o Banco de Dados do cliente,
-                    realize uma consulta no sistema e informe
-                    qual a média de ligações mensais.
+                    realize uma consulta no sistema para informar
+                    qual a média de ligações mensais
                     <br><b>Dados Importados/Cadastros:</b> Descrever se houve importação de cadastros conforme envio do
                     cliente, se cadastros foram realizados
                     manualmente ou se houve reutilização de Banco de Dados.<br>
-                    <b>Específicações do Servidor:</b> No Servidor do SOMA Tarifador, acesse: Este Computador >
-                    Propriedades e realize a captura de tela das específicações
-                    e realize o upload da imagem.<br><br>
+                    <b>Específicações do Servidor:</b> No Servidor do SOMA Tarifador, acessar: Este Computador >
+                    Propriedades, realizar
+                    a captura de tela das específicações e fazer o upload da imagem.<br><br>
                     <b>Rotina de Backup</b>
                     <ul class="info-list">
-                        <li>Local de Armazenamento: Insira o diretório onde está sendo realizado os Backups do SOMA
+                        <li>Local de Armazenamento: Diretório onde está sendo realizado os Backups do SOMA
                             Tarifador</li>
-                        <li>Horário de Agendamento: Informe qual horário está agendado para execução do Backup</li>
-                        <li>Aplicações Responsável: Informe qual aplicação responsável pelo agendamento da rotina de
-                            Backup</li>
+                        <li>Periodicidade: Frequência da execução (Diariamente, Semanalmente, Mensalmente e etc) </li>
+                        <li>Horário de Agendamento: Horário agendado para execução</li>
+                        <li>Aplicação Responsável: Aplicação responsável pelo agendamento da rotina</li>
                     </ul>
                     </p>
                     <hr>
                     <h2 class="info-title"><i class="fa-solid fa-circle-arrow-right"></i> Dados Adicionais</h2>
                     <p>
-                        <b>Layout de Entrada e Saída:</b> Após a tarifação ser validada no cliente, acesse o SOMA
-                        Tarifador > Parâmetros e realize a captura de tela
-                        dos Layouts de Entrada e Saída e realize o upload das imagens no TEP.
+                        <b>Layout de Entrada e Saída:</b> Após a tarifação ser validada no cliente, acessar o SOMA
+                        Tarifador > Parâmetros, realizar a captura de tela
+                        dos Layouts de Entrada/Saída e fazer o upload das imagens.
                         <br>
-                        <b>Descrição da Estrutura Implantada:</b> Descrever resumidamente a estrutura implantada no
+                        <b>Descrição da Estrutura Implantada:</b> Descrever a estrutura implantada no
                         cliente. Se houve rotinas ou procedimentos
-                        específicos, é importante que sejam descritos.
+                        específicos, é importante que sejam descritos detalhadamente.
                         <br>
                         <b>Obrigações e Responsabilidades do Cliente:</b> Descrever quais são as obrigações do cliente
                         com as aplicações/serviços do SOMA Tarifador
@@ -135,21 +143,20 @@
                         estiver parado, as ligações não serão coletadas e etc.<br><br>
 
                         <b>Treinamento</b><br>
-                        Caso o cliente tenha contratado o treinamento do SOMA Tarifador, informe os dados abaixo:
+                        Caso o cliente tenha contratado o treinamento do SOMA Tarifador, preencher os dados abaixo:
                     <ul class="info-list">
                         <li>Data: Data em que foi aplicado o treinamento</li>
-                        <li>Aplicações: Selecione referente a quais aplicações do SOMA Tarifador o treinamento foi
+                        <li>Aplicações: Apontar referente a quais aplicações do SOMA Tarifador o treinamento foi
                             realizado</li>
                         <li>Observações: Descrever observações gerais do treinamento, como participantes, procedimentos,
-                            envio de
-                            manuais e etc.
+                            se houve envio de documentações e etc.
                         </li>
                     </ul>
                     </p>
                     <center>
-                        <h2 class="main-title"><i class="fa-solid fa-circle-arrow-up"></i>
-                            <a href="#" class="btn-scroll main-title">Voltar ao topo</a>
-                        </h2>
+                        <h3 class="info-title"><i class="fa-solid fa-circle-arrow-up"></i>
+                            <a href="#" class="btn-scroll info-title">Voltar ao topo</a>
+                        </h3>
                     </center>
                 </div>
             </div>
